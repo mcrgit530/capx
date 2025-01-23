@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL =process.env.REACT_APP_BACKEND_URL + "/api/stocks";
+const BASE_URL ="http://4.236.218.156:8080/api/stocks";
 const stockService = {
   getAllStocks: async () => {
     const response = await axios.get(`${BASE_URL}`);
